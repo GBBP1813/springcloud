@@ -1,0 +1,22 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: provider
+
+
+eureka:
+  instance:
+    prefer-ip-address: true  # 注册服务的时候使用服务的ip地址
+ #   instance-id: provider-8005
+  client:
+    service-url:
+      defaultZone: http://localhost:8763/eureka/,http://localhost:8765/eureka/
+      #defaultZone: http://eureka8761.com:8761/eureka/,http://eureka8762.com:8762/eureka/
+info:
+  app.name: atguigu
+  company.name: www.atguigu,com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
+

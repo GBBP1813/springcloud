@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consumer
+server:
+  port: 8200
+
+eureka:
+  instance:
+    register-with-eureka: false
+  client:
+    service-url:
+      defaultZone: http://localhost:8763/eureka/,http://localhost:8765/eureka/
